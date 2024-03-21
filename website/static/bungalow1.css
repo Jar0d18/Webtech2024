@@ -1,0 +1,2738 @@
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Navigatiebalk */
+nav {
+    background-color:#5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #eff7fb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .active {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    }
+    
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #5aa423;
+    text-align: center;
+    vertical-align: middle;
+    }
+    
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
+    
+  tr:hover {
+    background-color: #ddd;
+    }
+  table img {
+    max-width: 800px;
+    height: auto;
+  }
+  
+  /* Wrapper */
+  .wrapper {
+    margin: 20px;
+  }
+  
+  .wrapper h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Activiteitenlijst */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  li h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  li img {
+    float: left;
+    margin-right: 20px;
+    max-width: 300px;
+  }
+  
+  li p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+  }
+  
+  
+  
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Navigatiebalk */
+nav {
+    background-color:#5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #eff7fb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .active {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    }
+    
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #5aa423;
+    text-align: center;
+    vertical-align: middle;
+    }
+    
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
+    
+  tr:hover {
+    background-color: #ddd;
+    }
+  table img {
+    max-width: 800px;
+    height: auto;
+  }
+  
+  /* Wrapper */
+  .wrapper {
+    margin: 20px;
+  }
+  
+  .wrapper h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Activiteitenlijst */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  li h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  li img {
+    float: left;
+    margin-right: 20px;
+    max-width: 300px;
+  }
+  
+  li p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+  }
+  
+  
+  
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Navigatiebalk */
+nav {
+    background-color:#5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #eff7fb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .active {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    }
+    
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #5aa423;
+    text-align: center;
+    vertical-align: middle;
+    }
+    
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
+    
+  tr:hover {
+    background-color: #ddd;
+    }
+  table img {
+    max-width: 800px;
+    height: auto;
+  }
+  
+  /* Wrapper */
+  .wrapper {
+    margin: 20px;
+  }
+  
+  .wrapper h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Activiteitenlijst */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  li h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  li img {
+    float: left;
+    margin-right: 20px;
+    max-width: 300px;
+  }
+  
+  li p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+  }
+  
+  
+  
+/* Stijlblad voor Bungalows.html */
+
+/* Algemene opmaak */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Hoofdtekst */
+h1 {
+  font-size: 36px;
+  margin: 20px 0 10px 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* Bungalow kaarten */
+.bungalow {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+}
+
+.bungalow h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.bungalow p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.bungalow img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+}
+
+.bungalow .button {
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.bungalow .button:hover {
+  background-color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigatiebalk */
+nav {
+  background-color:#5aa423;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #eff7fb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.active {
+  background-color: #28a745;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  }
+  
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #5aa423;
+  text-align: center;
+  vertical-align: middle;
+  }
+  
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+  
+tr:hover {
+  background-color: #ddd;
+  }
+table img {
+  max-width: 800px;
+  height: auto;
+}
+
+.hero-image {
+  background-image: url('duinenwijdeafbeelding.png');
+  background-size: cover;
+  width: 100%;
+  height: 500px; /* Stel de hoogte van de afbeelding in op de gewenste grootte */
+  position: relative; /* Verander dit naar relative */
+  margin-top: -95px; /* Zet een negatieve marge-top om de afbeelding boven de inhoud te plaatsen */
+  z-index: -1; /* Stel dit in op een negatieve waarde om de afbeelding onder de inhoud te plaatsen */
+}
+
+
+
+/* Navigatiebalk */
+nav {
+    background-color: #5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    }
+    
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    
+    nav li {
+    float: left;
+    }
+    
+    nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    }
+    
+    nav li a:hover {
+    background-color: #fff;
+    color: #5aa423;
+    }
+    
+    .active {
+    background-color: #28a745;
+    color: white;
+    }
+    
+    .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    }
+    
+    h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+    
+    .faciliteiten-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    }
+    
+    .faciliteit {
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding: 20px;
+    }
+    
+    .faciliteit:hover {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+    }
+    
+    .faciliteit img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    }
+    
+    .faciliteit h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    .faciliteit p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+    }
+    
+    @media screen and (max-width: 767px) {
+    .faciliteit {
+    width: 100%;
+    margin-bottom: 40px;
+    }
+    }
+
+
+
+
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .error {
+    margin: 10px auto;
+    max-width: 100%;
+    padding: 0px;
+    background-color: black;
+    border: 10px solid #5aa423; /* Groene border */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: black;
+  }
+  
+  h1 {
+    margin-top: 0;
+    text-align: center;
+    color: #5aa423; /* Groene tekst */
+  }
+  
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #fff; /* Witte letters */
+  }
+
+  /* Navigatiebalk */
+nav {
+    background-color:#5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #eff7fb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+body {
+  background-color: #FFFFFF; /* Change background color to white */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF; /* Change container background color to white */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #5aa423;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0072C6;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F2F2F2;
+  color: #3C3C3C;
+}
+
+input[type="submit"] {
+  background-color: #0072C6;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #005CA9;
+}
+
+/* Navigatiebalk */
+nav {
+  background-color: #5aa423;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #eff7fb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.active {
+  background-color: #28a745;
+  color: white;
+}
+
+.img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(nationaalparkhollandseduinen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.login-panel h1 {
+  color: #fff;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.login-panel label {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.login-panel input[type="text"],
+.login-panel input[type="password"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-panel input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.login-panel input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.login-panel a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-size: 16px;
+}
+
+.login-panel p {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+
+/* Algemene opmaak */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+}
+
+/* Welkomsttekst */
+.welcome {
+  margin: 20px;
+  font-size: 24px;
+}
+
+/* Reserveringsknop */
+.booking-button {
+  background-color: #5aa423;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+  background-color: #28a745;
+}
+
+/* Tabel met reserveringen */
+.reservations {
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+.reservations th,
+.reservations td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.reservations th {
+  background-color: #333;
+  color: #fff;
+}
+
+.reservations tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Reservering wijzigen/verwijderen knoppen */
+.modify-button,
+.delete-button {
+  background-color: #5aa423;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+
+.modify-button:hover,
+.delete-button:hover {
+  background-color: #28a745;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigatiebalk */
+nav {
+  background-color:#5aa423;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #eff7fb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: #fff;
+}
+
+.active {
+  background-color: #28a745;
+  color: #fff;
+}
+
+footer{
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color:  #4CAF50;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  color:  #4CAF50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #d4f1e1;
+  color:  #4CAF50
+}
+
+
+/* Navigatiebalk */
+nav {
+    background-color:#5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #eff7fb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .active {
+    background-color:  #4CAF50;
+    color: white;
+  }
+/* Updated styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('bungalow1.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4CAF50;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p.error {
+    color: #ff3333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Stijlblad voor Bungalows.html */
+
+/* Algemene opmaak */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Hoofdtekst */
+h1 {
+  font-size: 36px;
+  margin: 20px 0 10px 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* Bungalow kaarten */
+.bungalow {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+}
+
+.bungalow h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.bungalow p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.bungalow img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+}
+
+.bungalow .button {
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.bungalow .button:hover {
+  background-color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigatiebalk */
+nav {
+  background-color:#5aa423;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #eff7fb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.active {
+  background-color: #28a745;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  }
+  
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #5aa423;
+  text-align: center;
+  vertical-align: middle;
+  }
+  
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+  
+tr:hover {
+  background-color: #ddd;
+  }
+table img {
+  max-width: 800px;
+  height: auto;
+}
+
+.hero-image {
+  background-image: url('duinenwijdeafbeelding.png');
+  background-size: cover;
+  width: 100%;
+  height: 500px; /* Stel de hoogte van de afbeelding in op de gewenste grootte */
+  position: relative; /* Verander dit naar relative */
+  margin-top: -95px; /* Zet een negatieve marge-top om de afbeelding boven de inhoud te plaatsen */
+  z-index: -1; /* Stel dit in op een negatieve waarde om de afbeelding onder de inhoud te plaatsen */
+}
+
+
+
+/* Navigatiebalk */
+nav {
+    background-color: #5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    }
+    
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    
+    nav li {
+    float: left;
+    }
+    
+    nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    }
+    
+    nav li a:hover {
+    background-color: #fff;
+    color: #5aa423;
+    }
+    
+    .active {
+    background-color: #28a745;
+    color: white;
+    }
+    
+    .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    }
+    
+    h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+    
+    .faciliteiten-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    }
+    
+    .faciliteit {
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding: 20px;
+    }
+    
+    .faciliteit:hover {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+    }
+    
+    .faciliteit img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    }
+    
+    .faciliteit h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    .faciliteit p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+    }
+    
+    @media screen and (max-width: 767px) {
+    .faciliteit {
+    width: 100%;
+    margin-bottom: 40px;
+    }
+    }
+
+
+
+
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .error {
+    margin: 10px auto;
+    max-width: 100%;
+    padding: 0px;
+    background-color: black;
+    border: 10px solid #5aa423; /* Groene border */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: black;
+  }
+  
+  h1 {
+    margin-top: 0;
+    text-align: center;
+    color: #5aa423; /* Groene tekst */
+  }
+  
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #fff; /* Witte letters */
+  }
+
+  /* Navigatiebalk */
+nav {
+    background-color:#5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #eff7fb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+body {
+  background-color: #FFFFFF; /* Change background color to white */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF; /* Change container background color to white */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #5aa423;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0072C6;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F2F2F2;
+  color: #3C3C3C;
+}
+
+input[type="submit"] {
+  background-color: #0072C6;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #005CA9;
+}
+
+/* Navigatiebalk */
+nav {
+  background-color: #5aa423;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #eff7fb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.active {
+  background-color: #28a745;
+  color: white;
+}
+
+.img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(nationaalparkhollandseduinen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.login-panel h1 {
+  color: #fff;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.login-panel label {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.login-panel input[type="text"],
+.login-panel input[type="password"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-panel input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.login-panel input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.login-panel a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-size: 16px;
+}
+
+.login-panel p {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+
+/* Algemene opmaak */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+}
+
+/* Welkomsttekst */
+.welcome {
+  margin: 20px;
+  font-size: 24px;
+}
+
+/* Reserveringsknop */
+.booking-button {
+  background-color: #5aa423;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+  background-color: #28a745;
+}
+
+/* Tabel met reserveringen */
+.reservations {
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+.reservations th,
+.reservations td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.reservations th {
+  background-color: #333;
+  color: #fff;
+}
+
+.reservations tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Reservering wijzigen/verwijderen knoppen */
+.modify-button,
+.delete-button {
+  background-color: #5aa423;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+
+.modify-button:hover,
+.delete-button:hover {
+  background-color: #28a745;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigatiebalk */
+nav {
+  background-color:#5aa423;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #eff7fb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: #fff;
+}
+
+.active {
+  background-color: #28a745;
+  color: #fff;
+}
+
+footer{
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color:  #4CAF50;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  color:  #4CAF50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #d4f1e1;
+  color:  #4CAF50
+}
+
+
+/* Navigatiebalk */
+nav {
+    background-color:#5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #eff7fb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .active {
+    background-color:  #4CAF50;
+    color: white;
+  }
+/* Updated styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('bungalow1.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4CAF50;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p.error {
+    color: #ff3333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Stijlblad voor Bungalows.html */
+
+/* Algemene opmaak */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Hoofdtekst */
+h1 {
+  font-size: 36px;
+  margin: 20px 0 10px 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* Bungalow kaarten */
+.bungalow {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+}
+
+.bungalow h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.bungalow p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.bungalow img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+}
+
+.bungalow .button {
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.bungalow .button:hover {
+  background-color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigatiebalk */
+nav {
+  background-color:#5aa423;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #eff7fb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.active {
+  background-color: #28a745;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  }
+  
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #5aa423;
+  text-align: center;
+  vertical-align: middle;
+  }
+  
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+  
+tr:hover {
+  background-color: #ddd;
+  }
+table img {
+  max-width: 800px;
+  height: auto;
+}
+
+.hero-image {
+  background-image: url('duinenwijdeafbeelding.png');
+  background-size: cover;
+  width: 100%;
+  height: 500px; /* Stel de hoogte van de afbeelding in op de gewenste grootte */
+  position: relative; /* Verander dit naar relative */
+  margin-top: -95px; /* Zet een negatieve marge-top om de afbeelding boven de inhoud te plaatsen */
+  z-index: -1; /* Stel dit in op een negatieve waarde om de afbeelding onder de inhoud te plaatsen */
+}
+
+
+
+/* Navigatiebalk */
+nav {
+    background-color: #5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    }
+    
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    
+    nav li {
+    float: left;
+    }
+    
+    nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    }
+    
+    nav li a:hover {
+    background-color: #fff;
+    color: #5aa423;
+    }
+    
+    .active {
+    background-color: #28a745;
+    color: white;
+    }
+    
+    .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    }
+    
+    h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+    
+    .faciliteiten-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    }
+    
+    .faciliteit {
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding: 20px;
+    }
+    
+    .faciliteit:hover {
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+    }
+    
+    .faciliteit img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    }
+    
+    .faciliteit h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    .faciliteit p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+    }
+    
+    @media screen and (max-width: 767px) {
+    .faciliteit {
+    width: 100%;
+    margin-bottom: 40px;
+    }
+    }
+
+
+
+
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .error {
+    margin: 10px auto;
+    max-width: 100%;
+    padding: 0px;
+    background-color: black;
+    border: 10px solid #5aa423; /* Groene border */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: black;
+  }
+  
+  h1 {
+    margin-top: 0;
+    text-align: center;
+    color: #5aa423; /* Groene tekst */
+  }
+  
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #fff; /* Witte letters */
+  }
+
+  /* Navigatiebalk */
+nav {
+    background-color:#5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #eff7fb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+body {
+  background-color: #FFFFFF; /* Change background color to white */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF; /* Change container background color to white */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #5aa423;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0072C6;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F2F2F2;
+  color: #3C3C3C;
+}
+
+input[type="submit"] {
+  background-color: #0072C6;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #005CA9;
+}
+
+/* Navigatiebalk */
+nav {
+  background-color: #5aa423;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #eff7fb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.active {
+  background-color: #28a745;
+  color: white;
+}
+
+.img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(nationaalparkhollandseduinen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.login-panel h1 {
+  color: #fff;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.login-panel label {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.login-panel input[type="text"],
+.login-panel input[type="password"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-panel input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.login-panel input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.login-panel a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-size: 16px;
+}
+
+.login-panel p {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+
+/* Algemene opmaak */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+}
+
+/* Welkomsttekst */
+.welcome {
+  margin: 20px;
+  font-size: 24px;
+}
+
+/* Reserveringsknop */
+.booking-button {
+  background-color: #5aa423;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+  background-color: #28a745;
+}
+
+/* Tabel met reserveringen */
+.reservations {
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+.reservations th,
+.reservations td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.reservations th {
+  background-color: #333;
+  color: #fff;
+}
+
+.reservations tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Reservering wijzigen/verwijderen knoppen */
+.modify-button,
+.delete-button {
+  background-color: #5aa423;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+
+.modify-button:hover,
+.delete-button:hover {
+  background-color: #28a745;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Navigatiebalk */
+nav {
+  background-color:#5aa423;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #eff7fb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: #fff;
+}
+
+.active {
+  background-color: #28a745;
+  color: #fff;
+}
+
+footer{
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color:  #4CAF50;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  color:  #4CAF50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #d4f1e1;
+  color:  #4CAF50
+}
+
+
+/* Navigatiebalk */
+nav {
+    background-color:#5aa423;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: #eff7fb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .active {
+    background-color:  #4CAF50;
+    color: white;
+  }
+/* Updated styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('bungalow1.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4CAF50;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p.error {
+    color: #ff3333;
+    margin-top: 10px;
+    text-align: center;
+}

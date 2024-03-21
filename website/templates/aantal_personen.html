@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aantal personen</title>
+  </head>
+  <body>
+    <h1>Aantal personen voor bungalowtype {{ bungalow_type }}</h1>
+    {% if aantal_personen %}
+      <p>Het aantal personen voor dit bungalowtype is: {{ aantal_personen }}</p>
+    {% else %}
+      <p>Het opgegeven bungalowtype is niet beschikbaar.</p>
+    {% endif %}
+  </body>
+</html>
+
+

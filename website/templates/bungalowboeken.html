@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bungalow Boeken</title>
+    <link rel="stylesheet" href="bungalow.css">
+</head>
+<body>
+    <h1>Bungalow Boeken</h1>
+
+    <form action="/reserveren" method="POST">
+        <label for="guest_id">Gast ID:</label>
+        <input type="text" id="guest_id" name="guest_id">
+
+        <label for="bungalow_id">Bungalow ID:</label>
+        <input type="text" id="bungalow_id" name="bungalow_id">
+
+        <label for="week">Gewenste Week:</label>
+        <input type="text" id="week" name="week">
+
+        <input type="submit" value="Reserveren">
+    </form>
+
+    <p>Let op: U kunt alleen reserveringen maken voor een volledige week.</p>
+
+    <footer class="footer">
+        <p>© 2023 Bungalowpark Zee en Duinen. Alle rechten voorbehouden.</p>
+      </footer>
+</body>
+</html>

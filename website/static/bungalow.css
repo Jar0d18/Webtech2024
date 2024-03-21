@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('/static/bungalow4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #000;
+    height: 80px;
+    line-height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+nav ul li.right {
+    margin-left: auto; 
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.full-width-image {
+    text-align: center; 
+}
+
+.full-width-image img {
+    width: 100%;
+}
+
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.image-with-text img {
+    width: 300px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.image-with-text .text {
+    flex: 1; 
+}
+
+
+.form-container {
+    background-color:#000;
+    color: #fff;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+

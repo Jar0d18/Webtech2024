@@ -1,0 +1,32 @@
+{% extends "base.html" %}  
+
+{%block title%}Reservering {% endblock %}
+
+{%block inhoud%}
+    <h1>Reservering</h1>
+    <form method="POST" action="{{ url_for('reservering') }}">
+      <label for="bungalow">Bungalow:</label>
+      <input type="text" id="bungalow" name="bungalow"><br>
+      <label for="type">Type:</label>
+      <input type="text" id="type" name="type"><br>
+      <label for="grootte">Grootte:</label>
+      <input type="text" id="grootte" name="grootte"><br>
+      <label for="week">Week:</label>
+      <input type="text" id="week" name="week"><br>
+      <input type="submit" value="Reserveer">
+    </form>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <label for="bungalow">Bungalow:</label>
+    <input type="text" id="bungalow" name="bungalow" value="{{ request.form.get('bungalow', '') }}"><br>
+    <label for="type">Type:</label>
+    <input type="text" id="type" name="type" value="{{ request.form.get('type', '') }}"><br>
+    <label for="grootte">Grootte:</label>
+    <input type="text" id="grootte" name="grootte" value="{{ request.form.get('grootte', '') }}"><br>
+    <label for="week">Week:</label>
+    <input type="text" id="week" name="week" value="{{ request.form.get('week', '') }}"><br>
+
+ 
+    {%endblock%}
+  

@@ -1,0 +1,28 @@
+{% extends "base.html" %}  
+
+{%block title%} Welkom op de inlogpagina!{% endblock %}
+
+{%block inhoud%}
+
+</head>
+<body>
+
+  <header>
+    <h1>{% if current_user.is_authenticated %}
+      <p>Welkom, {{ current_user.username }}</p>
+  {% endif %}
+  </h1>
+  </header>
+  <main>
+    <h2>Welkom op de inloghomepagina</h2>
+    <p>Hier kun je verschillende acties uitvoeren met betrekking tot reserveringen.</p>
+    <!-- Plaats hier eventuele verdere inhoud en functionaliteit -->
+    <ul>
+      <li><a href="reservering">Reservering maken</a></li>
+      <li><a href="reservering">Reserveringen bekijken</a></li>
+      <li><a href="reserveringaanpassen.html">Reserveringen aanpassen</a></li>
+      <li><a href="reserveringannuleren.html">Reserveringen annuleren</a></li>
+    </ul>
+  </main>
+
+  {%endblock%}

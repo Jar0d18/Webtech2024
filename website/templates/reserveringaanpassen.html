@@ -1,0 +1,16 @@
+{% extends "base.html" %}  
+
+{%block title%}Reservering aanpassen {% endblock %}
+
+{%block inhoud%}
+
+    <div class="reservering-aanpassen-panel">
+        <h1>Reservering aanpassen</h1>
+        <form action="/annuleren" method="POST">
+            <label for="reservering-id">Reservering ID:</label>
+            <input type="text" id="reservering-id" name="reservering-id">
+            <input type="submit" value="Annuleren">
+        </form>
+        <p>Let op: Het annuleren van een reservering is definitief en kan niet ongedaan worden gemaakt.</p>
+    </div>
+    {%endblock%}
