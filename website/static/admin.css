@@ -1,0 +1,87 @@
+body {
+    background-image: url('adm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'courier new', monospace;
+    padding: 0;
+    margin: 0;
+}
+
+/* admin.css */
+
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 5;
+    padding: 0;
+   
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #000000; /* Dark gray background color */
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Add padding to the top and bottom */
+  }
+  
+  header nav ul {
+    list-style-type: none; /* Remove bullet points */
+  }
+  
+  header nav ul li {
+    display: inline-block; /* Display the list items horizontally */
+    margin-right: 20px; /* Add margin to separate list items */
+  }
+  
+  header nav ul li a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none;
+    padding: 35px;
+    margin: 3px;
+
+  }
+  
+  /* Style the "Welkom" section */
+  .welcome {
+    margin-top: 25px;
+    padding: 20px /* Add margin to create space from the header */
+  }
+  
+  /* Style the main content */
+  main {
+    padding: 25px;
+    margin: 10px; /* Add padding to the main content */
+  }
+  
+  h2 {
+    color: #000000; /* Dark gray text color */
+  }
+  
+  p {
+    color: #000000; /* Light gray text color */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullet points */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Add margin between list items */
+  }
+  
+  li a {
+    color: #000000; /* Green text color for links */
+    text-decoration: none; /* Remove underline from links */
+    border-bottom: 2px solid #000000;
+    margin: 30px;
+    /* Add a solid border bottom to create a solid line effect */
+  }
+  
+  li a:hover {
+    border-bottom: none; /* Remove the border bottom on hover */
+  }
+  
+  
+  li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  

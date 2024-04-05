@@ -1,0 +1,34 @@
+/* Styles for reservation management page */
+
+.admin-pagina {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .delete-button, .edit-button, .save-button {
+    padding: 6px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    table {
+      width: 100%;
+    }
+  }
+  

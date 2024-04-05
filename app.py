@@ -2,8 +2,7 @@ from website import app, db
 from flask import render_template, redirect, request, url_for, flash, session
 from flask_login import login_user, login_required, logout_user, current_user
 from website.models import Bungalowpark, User, Reservering
-from website.forms import LoginForm, RegistrationForm, ReservationForm
-
+from website.forms import LoginForm, RegistrationForm, ReservationForm 
 
 
 def load_user(user_id):
@@ -14,10 +13,10 @@ def load_user(user_id):
 class Bungalow(db.Model):
     __tablename__ = 'bungalow'
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(50), unique=True, nullable=False)
+    naam = db.Column(db.String(50), unique=True, nullable=False)
     type = db.Column(db.String(80), nullable=False)
-    capacity = db.Column(db.Integer, nullable=False)
-    week_price = db.Column(db.Float, nullable=False)
+    aantal_personen = db.Column(db.Integer, nullable=False)
+    weekprijs = db.Column(db.Float, nullable=False)
     park_id = db.Column(db.Integer, db.ForeignKey('bungalowpark.id'), nullable=False)
     
 class Guest(db.Model):
@@ -59,41 +58,56 @@ with app.app_context():
 
         return None
 
-    @app.route('/reservering', methods=['get','POST'])
+    @app.route('/reservering', methods=['GET', 'POST'])
     @login_required
     def reservering():
-        form = ReservationForm()
-        if form.validate_on_submit():
-            # Check if bungalow exists
-            bungalow = Bungalowpark.query.filter_by(id=form.bungalow.data).first()
-            if bungalow is None:
-                error = 'Bungalow does not exist'
-                return render_template('reservering.html', form=form, error=error)
+        if current_user.is_authenticated:
+            form = ReservationForm()
 
-            # Check if week is available
-            week = form.week.data
-            existing_reservations = Reservering.query.filter_by(bungalow=bungalow, week=week).all()
-            if len(existing_reservations) > 0:
-                error = 'Week is not available'
-                return render_template('reservering.html', form=form, error=error)
+            if form.validate_on_submit():
+                bungalow_id = form.bungalow.data
+                bungalow = Bungalow.query.get(bungalow_id)
 
-             # Create new reservation
-            bungalow_naam = form.bungalow.data
-            type = form.type.data
-            grootte = form.grootte.data
-            week = form.week.data
-            reservering = Reservering(bungalow=bungalow_naam, type=type, grootte=grootte, week=week, user_id=current_user.id)
-            db.session.add(reservering)
-            db.session.commit()
+                if not bungalow:
+                    error = 'Bungalow bestaat niet.'
+                    return render_template('reservering.html', form=form, error=error)
 
-            flash('Reservation made successfully')
-            return redirect(url_for('reservering'))
+                week = form.week.data
+                existing_reservations = Reservering.query.filter_by(bungalow_id=bungalow_id, week=week).all()
+                if existing_reservations:
+                    error = 'Week is not available'
+                    return render_template('reservering.html', form=form, error=error)
 
-        # Get user's reservations
-        reserveringen = Reservering.query.filter_by(user_id=current_user.id).all()
+                reservering = Reservering(
+                    bungalow_id=bungalow_id,
+                    week=week,
+                    user_id=current_user.id
+                ) 
+                db.session.add(reservering)
+                db.session.commit()
 
-        return render_template('reservering.html', form=form, reserveringen=reserveringen)
+                flash('Reservering succesvol!')
+                return redirect(url_for('reservering'))
 
+            bungalows = Bungalow.query.all()  
+            return render_template('reservering.html', form=form, bungalows=bungalows)  
+        else:
+            return "U moet ingelogd zijn om toegang te krijgen tot deze pagina."
+
+
+        
+    @app.route('/reservering_bekijken', methods=['GET', 'POST'])
+    @login_required
+    def reservering_bekijken():
+        reservations = Reservering.query.all()  
+        return render_template('reservering_bekijken.html', reservations=reservations)
+
+
+
+    @app.route('/reservering_aanpassen', methods=['GET', 'POST'])
+    @login_required
+    def reservering_aanpassen():
+        return render_template('reserveringaanpassen.html')
 
 
     @app.route('/registratie', methods=['GET', 'POST'])
@@ -134,10 +148,6 @@ with app.app_context():
 
     
 
-    @app.before_first_request
-    def create_all():
-        db.create_all()
-
     @app.route('/inlog', methods=['GET', 'POST'])
     def login():
         form = LoginForm()
@@ -145,7 +155,7 @@ with app.app_context():
             user = User.query.filter_by(email=form.email.data).first()
             if user is not None and user.check_password(form.password.data): 
                 login_user(user)
-                session['role'] = 'user' # get from DB: user.role
+                session['role'] = 'user' 
                 flash('Succesvol ingelogd.')
                 next = request.args.get('next')
                 if next == None or not next[0]=='/':
@@ -179,4 +189,3 @@ with app.app_context():
     
     if __name__ == '__main__':
         app.run(debug=True)
-

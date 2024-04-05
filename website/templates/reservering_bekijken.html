@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <title>Reservering bekijken</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/inloghomepagina">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="admin-pagina">
+    <h2>Reserveringen</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Bungalow ID</th>
+        <th>Week</th>
+        <th>User ID</th>
+        <th>Actie</th>
+      </tr>
+      {% for reservation in reservations %}
+      <tr id="reservation_{{ reservation[0] }}">
+        <td>{{ reservation[0] }}</td>
+        <td>{{ reservation[1] }}</td>
+        <td>{{ reservation[2] }}</td>
+        <td>{{ reservation[3] }}</td>
+        <td>
+          <button onclick="startEdit('{{ reservation[0] }}')" class="edit-button btn btn-primary">Bewerken</button>
+          <button onclick="saveEdit('{{ reservation[0] }}')" class="save-button btn btn-success" style="display: none;">Opslaan</button>
+        </td>               
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <script>
+    function startEdit(reservationId) {
+      var row = document.getElementById('reservation_' + reservationId);
+      var cells = row.getElementsByTagName('td');
+      for (var i = 1; i < cells.length - 1; i++) {
+        cells[i].setAttribute('contenteditable', true);
+      }
+      var deleteButton = row.querySelector('form button');
+      deleteButton.style.display = 'none';
+      var editButton = row.querySelector('.edit-button');
+      editButton.style.display = 'none';
+      var saveButton = row.querySelector('.save-button');
+      saveButton.style.display = 'inline-block';
+    }
+
+    function saveEdit(reservationId) {
+      var row = document.getElementById('reservation_' + reservationId);
+      var editableCells = row.querySelectorAll('[contenteditable="true"]');
+      var data = {
+        id: editableCells[0].innerText,
+        bungalow_id: editableCells[1].innerText,
+        week: editableCells[2].innerText,
+        user_id: editableCells[3].innerText,
+      };
+      fetch(`/update_reservation/${reservationId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (!response.ok) throw new Error('Netwerkantwoord was niet ok.');
+        return response.json();
+      })
+      .then(json => {
+        alert('Reservering succesvol bijgewerkt.');
+        location.reload();
+      })
+      .catch(error => {
+        console.error('Er is een probleem met uw fetch-operatie: ', error.message);
+        alert('Er is een fout opgetreden bij het bijwerken.');
+      });
+    }
+  </script>
+</body>
+</html>

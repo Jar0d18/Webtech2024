@@ -31,9 +31,6 @@ class User(db.Model, UserMixin):
 class Reservering(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     bungalow_id = db.Column(db.Integer, db.ForeignKey('bungalow.id'), nullable=False)
-    bungalow_naam = db.Column(db.String(50), nullable=False)
-    type = db.Column(db.String(10), nullable=False)
-    grootte = db.Column(db.Integer, nullable=False)
     week = db.Column(db.Integer, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 

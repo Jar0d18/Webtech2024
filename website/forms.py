@@ -15,8 +15,6 @@ class ReservationForm(FlaskForm):
     type = StringField('Type')
     grootte = StringField('Grootte')
     week = StringField('Week', validators=[DataRequired()])
-    username = StringField('Gebruikersnaam', validators=[DataRequired()])
-    password = PasswordField('Wachtwoord', validators=[DataRequired()])
     submit = SubmitField('Reserveer')
 
 class RegistrationForm(FlaskForm):
